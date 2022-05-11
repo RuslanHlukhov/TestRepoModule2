@@ -3,5 +3,16 @@
  */
 
 public with sharing class test {
-
+    public static List<Account> selectAccount() {
+        return [
+                SELECT Id, Name
+                FROM Account
+        ];
+    }
+    public static List<Contact> selectContact() {
+        return [
+                SELECT Id, Name
+                FROM Contact
+        ];
+    }
 }
