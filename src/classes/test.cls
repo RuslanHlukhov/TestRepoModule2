@@ -14,5 +14,13 @@ public with sharing class test {
                 SELECT Id, Name
                 FROM Contact
         ];
+
+    }
+    public static List<Contract> selectContract() {
+        return [
+                SELECT Id, Name
+                FROM Contract
+        ];
+
     }
 }
